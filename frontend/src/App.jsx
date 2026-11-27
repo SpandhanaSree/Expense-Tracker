@@ -158,10 +158,11 @@ function App() {
                   <td>{expense.date}</td>
                   <td>
                     <button
-                      onClick={() => deleteExpense(expense.id)}
-                    >
-                      Delete
-                    </button>
+  type="button"
+  onClick={() => deleteExpense(expense.id)}
+>
+  Delete
+</button>
                   </td>
                 </tr>
               ))}
