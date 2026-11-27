@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  border: none;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+  background: #F5EFE1;
+  color: #3F2928;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  padding: 45px 0;
+}
+
+.app > h1 {
+  margin-bottom: 8px;
+  font-size: 32px;
+  font-weight: 800;
+  color: #790D16;
+}
+
+.app > p {
+  margin-top: 0;
+  margin-bottom: 32px;
+  color: #79645B;
+}
+
+form,
+section {
+  margin-bottom: 28px;
+  padding: 26px;
+  background: #FFFCF5;
+  border: 1px solid #E5D3AF;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(121, 13, 22, 0.06);
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 22px;
+  font-size: 21px;
+  color: #790D16;
+}
+
+form input,
+form select {
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 13px 15px;
+  border: 1px solid #AEC4D4;
+  border-radius: 9px;
+  background: #F5EFE1;
+  color: #3F2928;
+  font: inherit;
+  outline: none;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #790D16;
+  box-shadow: 0 0 0 3px rgba(121, 13, 22, 0.10);
+}
+
+button {
+  padding: 11px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #790D16;
+  color: #F5EFE1;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: #AEC4D4;
+  color: #790D16;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 15px 12px;
+  border-bottom: 1px solid #E5D3AF;
+}
+
+th {
+  color: #790D16;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+td {
+  font-size: 14px;
+}
+
+td button {
+  padding: 8px 12px;
+  background: #790D16;
+  font-size: 13px;
+}
+
+td button:hover {
+  background: #AEC4D4;
+  color: #790D16;
+}
+
+section h3 {
+  color: #790D16;
+  font-size: 15px;
+}
+
+section > div {
+  margin-bottom: 18px;
+}
+
+@media (max-width: 700px) {
+  .app {
+    width: 94%;
+    padding: 28px 0;
+  }
+
+  form,
+  section {
+    padding: 18px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .app > h1 {
+    font-size: 26px;
+  }
+}
