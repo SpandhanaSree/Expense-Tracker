@@ -178,3 +178,52 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   width: 18px;
   height: 18px;
 }
+
+
+/* Dark Theme */
+
+body {
+  background: #21191D;
+  color: #F5EFE1;
+}
+
+.app > h1 {
+  color: #E5D3AF;
+}
+
+.app > p {
+  color: #C2AFAC;
+}
+
+form,
+section {
+  background: #302529;
+  border: 1px solid #574047;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+}
+
+h2,
+section h3 {
+  color: #E5D3AF;
+}
+
+form input,
+form select {
+  background: #403338;
+  color: #F5EFE1;
+  border: 1px solid #70565D;
+  color-scheme: dark;
+}
+
+form input::placeholder {
+  color: #C2AFAC;
+}
+
+th {
+  color: #E5D3AF;
+}
+
+td {
+  color: #F5EFE1;
+  border-bottom-color: #574047;
+}
