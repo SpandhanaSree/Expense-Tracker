@@ -16,7 +16,7 @@ function App() {
     date: "",
   });
 
-  const API_URL = "http://localhost:8080/api";
+  const API_URL = "https://expense-tracker-api-db2o.onrender.com/api";
 
   async function fetchData() {
     const expensesResponse = await fetch(`${API_URL}/expenses`);

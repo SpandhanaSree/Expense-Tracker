@@ -17,7 +17,10 @@ import java.util.*;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+        "http://localhost:5173",
+        "https://expense-tracker-eight-sigma-47.vercel.app"
+})
 public class ExpenseController {
 
     private final ExpenseRepository expenseRepository;
